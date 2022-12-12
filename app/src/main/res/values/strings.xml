@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidInternNavigation</string>
+    <string name="nav_text_red">go to green</string>
+    <string name="nav_text_green">go to blue</string>
 </resources>

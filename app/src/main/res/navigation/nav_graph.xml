@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/frRed">
+
+    <fragment
+        android:id="@+id/frRed"
+        android:name="com.example.androidinternnavigation.RedFragment"
+        android:label="fragment_red"
+        tools:layout="@layout/fragment_red" >
+        <action
+            android:id="@+id/action_frRed_to_frGreen"
+            app:destination="@id/frGreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/frGreen"
+        android:name="com.example.androidinternnavigation.GreenFragment"
+        android:label="fragment_green"
+        tools:layout="@layout/fragment_green" >
+        <action
+            android:id="@+id/action_frGreen_to_frBlue"
+            app:destination="@id/frBlue" />
+    </fragment>
+    <fragment
+        android:id="@+id/frBlue"
+        android:name="com.example.androidinternnavigation.BlueFragment"
+        android:label="fragment_blue"
+        tools:layout="@layout/fragment_blue" />
+</navigation>
