@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.androidinternnavigation.databinding.FragmentGreenBinding
 
 class GreenFragment : Fragment() {
@@ -15,7 +15,7 @@ class GreenFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentGreenBinding.inflate(layoutInflater)
         return binding.root
     }
@@ -32,7 +32,7 @@ class GreenFragment : Fragment() {
 
     private fun navButtonSetOnClick(view: View) {
         binding.btGreen.setOnClickListener {
-            view.findNavController().navigate(R.id.action_frGreen_to_frBlue)
+            findNavController().navigate(R.id.action_frGreen_to_frBlue)
         }
     }
 }

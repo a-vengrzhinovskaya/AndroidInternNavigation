@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.androidinternnavigation.databinding.FragmentRedBinding
 
 class RedFragment : Fragment() {
@@ -15,7 +15,7 @@ class RedFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentRedBinding.inflate(layoutInflater)
         return binding.root
     }
@@ -32,7 +32,7 @@ class RedFragment : Fragment() {
 
     private fun navButtonSetOnClick(view: View) {
         binding.btRed.setOnClickListener {
-            view.findNavController().navigate(R.id.action_frRed_to_frGreen)
+            findNavController().navigate(R.id.action_frRed_to_frGreen)
         }
     }
 }
