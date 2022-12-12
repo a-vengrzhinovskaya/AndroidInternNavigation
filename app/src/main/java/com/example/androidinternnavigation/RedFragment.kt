@@ -22,7 +22,7 @@ class RedFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        navButtonSetOnClick(view)
+        navButtonSetOnClick()
     }
 
     override fun onDestroyView() {
@@ -30,7 +30,7 @@ class RedFragment : Fragment() {
         _binding = null
     }
 
-    private fun navButtonSetOnClick(view: View) {
+    private fun navButtonSetOnClick() {
         binding.btRed.setOnClickListener {
             findNavController().navigate(R.id.action_frRed_to_frGreen)
         }
