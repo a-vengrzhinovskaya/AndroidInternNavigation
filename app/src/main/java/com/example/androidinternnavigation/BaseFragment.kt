@@ -25,7 +25,7 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        navButtonSetOnClick()
+        setupListeners()
     }
 
     override fun onDestroyView() {
@@ -33,5 +33,5 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment() {
         _binding = null
     }
 
-    abstract fun navButtonSetOnClick()
+    abstract fun setupListeners()
 }

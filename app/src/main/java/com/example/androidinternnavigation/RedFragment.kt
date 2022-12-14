@@ -9,7 +9,7 @@ class RedFragment : BaseFragment<FragmentRedBinding>() {
     override val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> FragmentRedBinding
         get() = FragmentRedBinding::inflate
 
-    override fun navButtonSetOnClick() {
+    override fun setupListeners() {
         binding.btRed.setOnClickListener {
             findNavController().navigate(R.id.action_frRed_to_frGreen)
         }

@@ -9,7 +9,7 @@ class GreenFragment : BaseFragment<FragmentGreenBinding>() {
     override val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> FragmentGreenBinding
         get() = FragmentGreenBinding::inflate
 
-    override fun navButtonSetOnClick() {
+    override fun setupListeners() {
         binding.btGreen.setOnClickListener {
             findNavController().navigate(R.id.action_frGreen_to_frBlue)
         }
