@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green"
-    tools:context=".GreenFragment">
+    tools:context=".text.TextFragment">
 
-    <Button
-        android:id="@+id/btGreen"
+    <TextView
+        android:id="@+id/btRed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/nav_text_green" />
+        android:text="@string/lorem_ipsum"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
 
 </FrameLayout>

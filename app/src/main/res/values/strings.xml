@@ -3,4 +3,10 @@
     <string name="nav_text_red">go to green</string>
     <string name="nav_text_green">go to blue</string>
     <string name="last_fragment">last fragment</string>
+    <string name="color">color</string>
+    <string name="photos">photos</string>
+    <string name="text">text</string>
+    <string name="lorem_ipsum">Vestibulum augue nibh, maximus vel aliquam ac, vehicula cursus nisl. Nullam maximus feugiat risus eu porta. Nulla non posuere nibh. Sed aliquet nulla quis dui consectetur gravida. Quisque iaculis porttitor porttitor. Ut vehicula sapien ac ultricies interdum. Vivamus hendrerit augue dui. Donec at posuere massa. Praesent congue, urna in molestie ornare, nulla elit consequat mi, eget feugiat libero sem vitae lacus. Donec aliquam massa nec tortor varius, non pellentesque est consectetur. In rhoncus neque in elit aliquam, sit amet ornare turpis pharetra. Phasellus maximus tortor ut felis pulvinar suscipit. In hac habitasse platea dictumst. Nullam laoreet, ante luctus placerat porta, ligula nibh auctor justo, eu consectetur ipsum justo ac libero. Suspendisse sed orci molestie ligula porttitor varius. Ut pretium ullamcorper feugiat. Proin mattis dapibus nunc vel tincidunt. Praesent vitae semper nisl. Donec facilisis malesuada lacus eget tempus. Proin elit nisl, ultrices sit amet gravida ac, blandit eu libero. Nullam eu vehicula dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
